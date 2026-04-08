@@ -3,6 +3,7 @@ import ConditionalRendering from './Components/ConditionalRendering'
 import Listrendering from './Components/Listrendering'
 import Combinerendering from './Components/Combinerendering'
 import SignInandOut from './Components/SignInandOut'
+import RegForm from './Components/RegForm'
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       {/* <ConditionalRendering />
       <Listrendering/>
       <Combinerendering/> */}
-      <SignInandOut/>
+      {/* <SignInandOut/> */}
+      <RegForm/>
     </>
   )
 }
