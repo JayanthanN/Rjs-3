@@ -4,6 +4,7 @@ import Listrendering from './Components/Listrendering'
 import Combinerendering from './Components/Combinerendering'
 import SignInandOut from './Components/SignInandOut'
 import RegForm from './Components/RegForm'
+import Stopwatch from './Components/Stopwatch'
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
       <Listrendering/>
       <Combinerendering/> */}
       {/* <SignInandOut/> */}
-      <RegForm/>
+      {/* <RegForm/> */}
+      <Stopwatch/>;
     </>
   )
 }
