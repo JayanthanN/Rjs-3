@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  border: 2px solid white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.parent {
+  background-color: #ffe082;
+}
+
+.child {
+  background-color: #e3f2fd;
+}
+
+.final {
+  background-color: #c8e6c9;
+}
+
+.message {
+  font-weight: bold;
+  color: #2c3e50;
+}

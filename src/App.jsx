@@ -6,6 +6,8 @@ import SignInandOut from './Components/SignInandOut'
 import RegForm from './Components/RegForm'
 import Stopwatch from './Components/Stopwatch'
 import ProfileImageUpdate from './Components/Profileimage'
+import Parent from './Component/Parent'
+import './App.css'
 
 
 function App() {
@@ -19,7 +21,10 @@ function App() {
       {/* <SignInandOut/> */}
       {/* <RegForm/> */}
       {/* <Stopwatch/>; */}
-      <ProfileImageUpdate/>
+      {/* <ProfileImageUpdate/> */}
+      <div className="app">
+        <Parent />
+      </div>
     </>
   )
 }
