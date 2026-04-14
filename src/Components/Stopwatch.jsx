@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Stopwatchtimer.css";
 
 const Stopwatch = () => {
-  const [time, setTime] = useState(0); // in seconds
+  const [time, setTime] = useState(0); 
   const [isRunning, setIsRunning] = useState(false);
 
   useEffect(() => {
@@ -14,10 +14,10 @@ const Stopwatch = () => {
       }, 1000);
     }
 
-    return () => clearInterval(interval); // cleanup
+    return () => clearInterval(interval); 
   }, [isRunning]);
 
-  // Format time (HH:MM:SS)
+ 
   const formatTime = () => {
     const hours = Math.floor(time / 3600);
     const minutes = Math.floor((time % 3600) / 60);
