@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(to right, #667eea, #764ba2);
@@ -36,4 +36,83 @@ body {
 .message {
   font-weight: bold;
   color: #2c3e50;
+} */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Light Theme */
+.app.light {
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+/* Dark Theme */
+.app.dark {
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+
+.form-container {
+  width: 350px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.form-container.light {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-container.dark {
+  background-color: #2c2c3e;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.theme-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.theme-btn:hover {
+  background-color: #1976d2;
 }
