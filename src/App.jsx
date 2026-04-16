@@ -1,59 +1,52 @@
 
-import ConditionalRendering from './Components/ConditionalRendering'
-import Listrendering from './Components/Listrendering'
-import Combinerendering from './Components/Combinerendering'
-import SignInandOut from './Components/SignInandOut'
-import RegForm from './Components/RegForm'
-import Stopwatch from './Components/Stopwatch'
-import ProfileImageUpdate from './Components/Profileimage'
-import Parent from './Component/Parent'
-import React, { useState } from "react";
-import { FormContext } from "./Components/FormContext";
-import Form from "./Components/Form";
+// import ConditionalRendering from './Components/ConditionalRendering'
+// import Listrendering from './Components/Listrendering'
+// import Combinerendering from './Components/Combinerendering'
+// import SignInandOut from './Components/SignInandOut'
+// import RegForm from './Components/RegForm'
+// import Stopwatch from './Components/Stopwatch'
+// import ProfileImageUpdate from './Components/Profileimage'
+// import Parent from './Component/Parent'
+// import React, { useState } from "react";
+// import { FormContext } from "./Components/FormContext";
+// import Form from "./Components/Form";
 import "./App.css";
+import Home from './Router/Home'
+import About from './Router/About'
+import Contact from './Router/Contact'
+import Profile from './Router/Profile'
+import Services from './Router/Services'
+import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'react-router-dom';
 
-
-const App = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    password: "",
-  });
-
-  const [theme, setTheme] = useState("light");
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-  };
-
+  function App() {
   return (
-    <FormContext.Provider
-      value={{
-        formData,
-        handleChange,
-        handleSubmit,
-        theme,
-        toggleTheme,
-      }}
-    >
-      <div className={`app ${theme}`}>
-        <Form />
-      </div>
-    </FormContext.Provider>
+
+    <div >
+      
+      <BrowserRouter>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/services" element={<Services />} >
+          <Route path="web-development" element={<h3>Web Development Service</h3>} />
+          <Route path="app-development" element={<h3>App Development Service</h3>} />
+          <Route path="ui-ux-design" element={<h3>UI/UX Design Service</h3>} /> 
+        </Route>
+
+      </Routes>
+
+      </BrowserRouter>
+
+      
+     
+    </div>
   );
-};
+  }
+
+
+
 
 export default App;

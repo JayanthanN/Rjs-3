@@ -37,7 +37,7 @@
   font-weight: bold;
   color: #2c3e50;
 } */
-body {
+/* body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -50,13 +50,13 @@ body {
 }
 
 /* Light Theme */
-.app.light {
+/* .app.light {
   background-color: #f4f6f8;
   color: #222;
 }
 
 /* Dark Theme */
-.app.dark {
+/* .app.dark {
   background-color: #1e1e2f;
   color: #ffffff;
 }
@@ -115,4 +115,116 @@ input {
 
 .theme-btn:hover {
   background-color: #1976d2;
+}  */ 
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #eef2f3, #d7e1ec);
+  color: #333;
+}
+
+/* Container */
+.container {
+  padding: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Links */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+
+/* Page Cards */
+.page {
+  background: #ffffff;
+  padding: 30px;
+  margin-top: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.page h1,
+.page h2 {
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+/* Services Section */
+.services-list {
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.services-list li {
+  margin: 10px 0;
+}
+
+.services-list a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.services-list a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Nested Service Box */
+.service-box {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-left: 5px solid #007bff;
+   border-right: 5px solid #007bff;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
 }
