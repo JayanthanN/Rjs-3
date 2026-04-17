@@ -117,38 +117,38 @@ input {
   background-color: #1976d2;
 }  */ 
 /* Reset */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* Body Styling */
-body {
+/* body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to right, #eef2f3, #d7e1ec);
   color: #333;
-}
+} */
 
 /* Container */
-.container {
+/* .container {
   padding: 30px;
   max-width: 1100px;
   margin: auto;
-}
+} */
 
 /* Navigation Bar */
-.navbar {
+/* .navbar {
   background: linear-gradient(135deg, #007bff, #0056b3);
   padding: 15px 30px;
   display: flex;
   justify-content: center;
   gap: 25px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* Navigation Links */
-.navbar a {
+/* .navbar a {
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -156,56 +156,56 @@ body {
   padding: 8px 14px;
   border-radius: 6px;
   transition: all 0.3s ease-in-out;
-}
+} */
 
-.navbar a:hover {
+/* .navbar a:hover {
   background-color: white;
   color: #007bff;
-}
+} */
 
 
 /* Page Cards */
-.page {
+/* .page {
   background: #ffffff;
   padding: 30px;
   margin-top: 25px;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
   text-align: center;
-}
+} */
 
-.page h1,
+/* .page h1,
 .page h2 {
   color: #0056b3;
   margin-bottom: 10px;
 }
 
 /* Services Section */
-.services-list {
+/* .services-list {
   list-style: none;
   margin-top: 15px;
   padding: 0;
-}
+} */
 
-.services-list li {
+/* .services-list li {
   margin: 10px 0;
-}
+} */
 
-.services-list a {
+/* .services-list a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
   color: #007bff;
   transition: color 0.3s ease;
-}
+} */
 
-.services-list a:hover {
+/* .services-list a:hover {
   color: #0056b3;
   text-decoration: underline;
-}
+} */
 
 /* Nested Service Box */
-.service-box {
+/* .service-box {
   margin-top: 20px;
   padding: 20px;
   background: #f8f9fa;
@@ -214,10 +214,10 @@ body {
   border-radius: 8px;
   font-size: 18px;
   font-weight: 500;
-}
+} */
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -227,4 +227,75 @@ body {
   .container {
     padding: 20px;
   }
+}  */
+
+/* Google Font (optional but nice) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+}
+
+/* Main container */
+div {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title */
+h2 {
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* USER LIST CARDS */
+p {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  margin: 12px auto;
+  padding: 15px;
+  border-radius: 15px;
+  width: 70%;
+  
+  color:#1e293b; /* 🔥 CHANGE HERE */
+  font-size: 18px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+/* Hover glow */
+p:hover {
+  transform: translateY(-5px) scale(1.03);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* DETAILS CARD */
+div > p {
+  width: 100%;
+  cursor: default;
+}
+
+/* Labels */
+b {
+  color: #ffd700;
+}
+
+/* Section headings */
+h3 {
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Loading */
+h3:first-child {
+  color: #ddd;
 }
