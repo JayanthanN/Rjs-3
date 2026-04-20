@@ -10,20 +10,26 @@
 // import React, { useState } from "react";
 // import { FormContext } from "./Components/FormContext";
 // import Form from "./Components/Form";
-import "./App.css";
-import Home from './Router/Home'
-import About from './Router/About'
-import Contact from './Router/Contact'
-import Profile from './Router/Profile'
-import Services from './Router/Services'
-import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'react-router-dom';
+// import "./App.css";
+// import Home from './Router/Home'
+// import About from './Router/About'
+// import Contact from './Router/Contact'
+// import Profile from './Router/Profile'
+// import Services from './Router/Services'
+// import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'react-router-dom';
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import UserList from './User/UserList';
+import UserDetails from './User/UserDetails';
+import './App.css';
+import ChatApp from './Components/ChatApp';
+
 
   function App() {
   return (
 
     <div >
       
-      <BrowserRouter>
+      {/* <BrowserRouter>
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -38,15 +44,16 @@ import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'rea
 
       </Routes>
 
-      </BrowserRouter>
-
-      
-     
+      </BrowserRouter> */}
+   {/* <Router>
+      <Routes>
+        <Route path="/" element={<UserList />} />
+        <Route path="/user/:id" element={<UserDetails />} />
+      </Routes>
+    </Router> */}
+    <ChatApp />
     </div>
   );
-  }
-
-
-
+}
 
 export default App;
