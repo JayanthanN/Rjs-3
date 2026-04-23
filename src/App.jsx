@@ -17,11 +17,13 @@
 // import Profile from './Router/Profile'
 // import Services from './Router/Services'
 // import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'react-router-dom';
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
-import UserList from './User/UserList';
-import UserDetails from './User/UserDetails';
-import './App.css';
-import ChatApp from './Components/ChatApp';
+// import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+// import UserList from './User/UserList';
+// import UserDetails from './User/UserDetails';
+// import './App.css';
+// import ChatApp from './Components/ChatApp';
+import React from 'react';  
+import UserList from './User/UsersList';
 
 
   function App() {
@@ -51,7 +53,8 @@ import ChatApp from './Components/ChatApp';
         <Route path="/user/:id" element={<UserDetails />} />
       </Routes>
     </Router> */}
-    <ChatApp />
+    {/* <ChatApp /> */}
+    <UserList />
     </div>
   );
 }
