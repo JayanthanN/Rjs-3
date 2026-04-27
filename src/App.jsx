@@ -24,6 +24,8 @@
 // import ChatApp from './Components/ChatApp';
 import React from 'react';  
 import UserList from './User/UsersList';
+import Crud from './Crudapp/Crud';
+import './Crudapp/Crud.css';
 
 
   function App() {
@@ -54,7 +56,8 @@ import UserList from './User/UsersList';
       </Routes>
     </Router> */}
     {/* <ChatApp /> */}
-    <UserList />
+    {/* <UserList /> */}
+    <Crud />
     </div>
   );
 }
